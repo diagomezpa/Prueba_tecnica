@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>VISTA 1</title>
+</head>
+<body>
+    <div class="table">
+
+        <div class="col_question" id="col_question">
+            <div class="cont_label">
+                
+                <label >Pregunta</label>
+                <input  type="checkbox" id="intento_01" name="question_01" disabled>
+                <input  type="checkbox" id="intento_02" name="question_01" disabled>
+            </div>
+            <div class="cont_question" id="cont_question">
+                <p> <b>La seguridad de la información</b> proporciona:</p>               
+            </div>
+            <div class="cont_image" id="cont_image">
+                <img id="q_image" width="200px" height="200px" src="images/pista-0.png" alt="imagen_01.png">
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="titulo_respuestas" id="titulo_respuestas">
+                <p>Estas son las <b>respuestas correctas:</b></p>
+            </div>
+            <div class="col_answers" id="col_answers">
+                <div class="cont_answer" id="cont_answer" draggable="true">
+                    <p>Confidencialidad</p>
+                </div>
+                <div class="cont_answer" id="cont_answer" draggable="true">
+                    <p>Acreditación</p>
+                </div>
+                <div class="cont_answer" id="cont_answer" draggable="true">
+                    <p>Integridad</p>
+                </div>
+            </div>
+            <button class="boton_continuar" id="boton_continuar" onclick="next_question()">
+                <b>CONTINUAR</b> 
+            </button>
+        </div>
+        
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
